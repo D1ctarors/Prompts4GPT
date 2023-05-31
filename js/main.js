@@ -51,9 +51,9 @@ function toggleNightMode() {
 
 	// Изменение картинки на кнопке в зависимости от режима
 	if (currentMode) {
-		modeButton.innerHTML = '<img src="/img/Live/sun.svg" alt="Day Mode">';
+		modeButton.innerHTML = '<img src="./img/Live/sun.svg" alt="Day Mode">';
 	} else {
-		modeButton.innerHTML = '<img src="/img/Live/moon.svg" alt="Night Mode">';
+		modeButton.innerHTML = '<img src="./img/Live/moon.svg" alt="Night Mode">';
 	}
 }
 
@@ -65,7 +65,7 @@ function createModeButton() {
 	modeButton.addEventListener('click', toggleNightMode);
 
 	// По умолчанию установлен дневной режим, поэтому кнопка должна показывать солнце
-	modeButton.innerHTML = '<img src="/img/Live/sun.svg" alt="Day Mode">';
+	modeButton.innerHTML = '<img src="./img/Live/sun.svg" alt="Day Mode">';
 
 	// Вставка кнопки после текста "Сделано с использованием GPT-3.5"
 	sidebarFooter.insertBefore(modeButton, sidebarFooter.childNodes[0].nextSibling);
